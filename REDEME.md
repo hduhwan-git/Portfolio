@@ -1,4 +1,4 @@
-##JUNGHUCL Protfolio
+## JUNGHUCL Protfolio
 
 
 # 컨테츠 / 인증 시험 개발 
@@ -39,7 +39,7 @@ jr.jungchul.com (주니어 E-러닝 콘텐츠 개발 )
 ![initial](http://www.7kula.com/protfolio/jungchul/img/m/4.PNG) 
 ![initial](http://www.7kula.com/protfolio/jungchul/img/m/5.PNG) 
 
-##ISTOCKMALL Protfolio
+## ISTOCKMALL Protfolio
 
 # 컨버스 미들웨어 운영 관리 
 
