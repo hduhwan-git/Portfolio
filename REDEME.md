@@ -94,8 +94,8 @@ jr.jungchul.com (주니어 E-러닝 콘텐츠 개발 )
 ![initial](http://www.7kula.com/protfolio/istockmall/img/m2.PNG) 
 
 
-##  테스트 사이트 구축  
-- 테스트 개발:  2023년 7월 
+##  테스트 닷넷 배포 게시 테스트   
+- 테스트 개발:  2023년 10월 
 - 작업 프로그램 : don.net core mvc .NET 6.0   
 - 기능  : 자사 쇼핑몰 테스트 사이트 
 - url : https://net-mvc.istockmall.com/
