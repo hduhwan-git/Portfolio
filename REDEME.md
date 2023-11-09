@@ -83,8 +83,7 @@ jr.jungchul.com (주니어 E-러닝 콘텐츠 개발 )
 - url : https://api-scm.istockmall.com/admin/member/login
 - 서버 관리 운영(OCI)  
 
-##  테스트 front 구축 
->>>>>>> 002fdb90069e705c195b348f8c91676c6dbbc430
+##  테스트 front 구축  
 - 테스트 개발:  2023년 7월 
 - 작업 프로그램 : svelte  
 - 기능  : 자사 및 셀러 테스트 API 검색 spa(Single Page Application)
