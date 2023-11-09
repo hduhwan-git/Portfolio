@@ -74,6 +74,16 @@ jr.jungchul.com (주니어 E-러닝 콘텐츠 개발 )
 ![initial](http://www.7kula.com/protfolio/istockmall/img/4.PNG) 
 ![initial](http://www.7kula.com/protfolio/istockmall/img/5.PNG) 
 
+##  구 플랫폼 사이트 운영 개발 관리 
+
+- 개발 운영:  2022년 10월 ~ 2023년 5월   
+- 작업 프로그램 : asp, mssql, php, mysql, jquery, json, xml, javascript     
+- 기능  : 자사 및 셀러 플랫폼 판매 및 쿠팡,11ST API 연동 운영 관리 
+- url : https://devmain.istockmall.com (현재 개발사이트만 존재)  
+- 서버 관리 운영(하나로호스팅)  
+- www.istockmall.co.kr (라라벨, vue) 아웃소싱 업체에서 관리중
+ 
+
 
 ##  테스트 미들웨어 구축 
  
@@ -99,4 +109,4 @@ jr.jungchul.com (주니어 E-러닝 콘텐츠 개발 )
 - 작업 프로그램 : don.net core mvc .NET 6.0   
 - 기능  : 자사 쇼핑몰 테스트 사이트 
 - url : https://net-mvc.istockmall.com/
-- 서버 관리 운영(하나로)  
+- 서버 관리 운영(하나로호스팅)    
