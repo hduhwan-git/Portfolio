@@ -1,5 +1,5 @@
 
-# Protfolio REDEME.md
+# Protfolio 
 - 경로: https://github.com/hduhwan-git/Portfolio/blob/master/REDEME.md
 
 
@@ -18,7 +18,7 @@ jr.jungchul.com (주니어 E-러닝 콘텐츠 개발 )
  
 
 ![initial](http://www.7kula.com/protfolio/jungchul/img/wewiz/1.PNG)
-![initial](hhttp://www.7kula.com/protfolio/jungchul/img/wewiz/3.PNG)
+![initial](http://www.7kula.com/protfolio/jungchul/img/wewiz/3.PNG)
 ![initial](http://www.7kula.com/protfolio/jungchul/img/wewiz/2.PNG)
 ![initial](http://www.7kula.com/protfolio/jungchul/img/wewiz/result.PNG)
 
@@ -28,7 +28,7 @@ jr.jungchul.com (주니어 E-러닝 콘텐츠 개발 )
 - 작업 프로그램 : javascript, jqury xml, json ajax asp mssql 2005, 2012 
 - 기능  : front, back CRM 통계 생성 및 리뉴얼    
 ![initial](http://www.7kula.com/protfolio/jungchul/img/old/1.PNG)
-![initial](hhttp://www.7kula.com/protfolio/jungchul/img/old/2.PNG)
+![initial](http://www.7kula.com/protfolio/jungchul/img/old/2.PNG)
 ![initial](http://www.7kula.com/protfolio/jungchul/img/old/3.PNG)  
 ![initial](http://www.7kula.com/protfolio/jungchul/img/old/s4.PNG) 
 
@@ -39,7 +39,7 @@ jr.jungchul.com (주니어 E-러닝 콘텐츠 개발 )
 
 
 ![initial](http://www.7kula.com/protfolio/jungchul/img/m/1.PNG)
-![initial](hhttp://www.7kula.com/protfolio/jungchul/img/m/2.PNG)
+![initial](http://www.7kula.com/protfolio/jungchul/img/m/2.PNG)
 ![initial](http://www.7kula.com/protfolio/jungchul/img/m/3.PNG) 
 ![initial](http://www.7kula.com/protfolio/jungchul/img/m/4.PNG) 
 ![initial](http://www.7kula.com/protfolio/jungchul/img/m/5.PNG) 
