@@ -14,23 +14,23 @@ jr.jungchul.com (주니어 E-러닝 콘텐츠 개발 )
 - 기능  :  학습 콘텐츠 개발(음성인식), 영어인증시험 개발 
 
 
-![initial](http://www.7kula.com/protfolio/jungchul/img/wewiz/player.PNG)
+![initial](/jungchul/img/wewiz/player.PNG)
  
 
-![initial](http://www.7kula.com/protfolio/jungchul/img/wewiz/1.PNG)
-![initial](http://www.7kula.com/protfolio/jungchul/img/wewiz/3.PNG)
-![initial](http://www.7kula.com/protfolio/jungchul/img/wewiz/2.PNG)
-![initial](http://www.7kula.com/protfolio/jungchul/img/wewiz/result.PNG)
+![initial](/jungchul/img/wewiz/1.PNG)
+![initial](/jungchul/img/wewiz/3.PNG)
+![initial](/jungchul/img/wewiz/2.PNG)
+![initial](/jungchul/img/wewiz/result.PNG)
 
  
 ##  jr.jungchul.com 사이트 리뉴얼 
 - 개발:  2019년  1월 ~ 8월
 - 작업 프로그램 : javascript, jqury xml, json ajax asp mssql 2005, 2012 
 - 기능  : front, back CRM 통계 생성 및 리뉴얼    
-![initial](http://www.7kula.com/protfolio/jungchul/img/old/1.PNG)
-![initial](http://www.7kula.com/protfolio/jungchul/img/old/2.PNG)
-![initial](http://www.7kula.com/protfolio/jungchul/img/old/3.PNG)  
-![initial](http://www.7kula.com/protfolio/jungchul/img/old/s4.PNG) 
+![initial](/jungchul/img/old/1.PNG)
+![initial](/jungchul/img/old/2.PNG)
+![initial](/jungchul/img/old/3.PNG)  
+![initial](/jungchul/img/old/s4.PNG) 
 
 ##  m.jc.co.kr 주니어콘텐츠 웹앱 서비스 (주니어 E-러닝 콘텐츠 개발 )  
 - 개발:  2018년 
@@ -38,11 +38,11 @@ jr.jungchul.com (주니어 E-러닝 콘텐츠 개발 )
 - 기능  : html4 멀티미디어 기능 이미지 , 음원 재생 , 테스트     
 
 
-![initial](http://www.7kula.com/protfolio/jungchul/img/m/1.PNG)
-![initial](http://www.7kula.com/protfolio/jungchul/img/m/2.PNG)
-![initial](http://www.7kula.com/protfolio/jungchul/img/m/3.PNG) 
-![initial](http://www.7kula.com/protfolio/jungchul/img/m/4.PNG) 
-![initial](http://www.7kula.com/protfolio/jungchul/img/m/5.PNG) 
+![initial](/jungchul/img/m/1.PNG)
+![initial](/jungchul/img/m/2.PNG)
+![initial](/jungchul/img/m/3.PNG) 
+![initial](/jungchul/img/m/4.PNG) 
+![initial](/jungchul/img/m/5.PNG) 
 
 # ISTOCKMALL Protfolio
 
@@ -67,12 +67,12 @@ jr.jungchul.com (주니어 E-러닝 콘텐츠 개발 )
 - 기능  : 자사 및 셀러 API 통계 및 로그 자료 분석에 따른 수집 
 - api 문서 https://dev-scm.istockmall.co.kr/docs#goods
 
-![initial](http://www.7kula.com/protfolio/istockmall/img/0.PNG) 
-![initial](http://www.7kula.com/protfolio/istockmall/img/1.PNG) 
-![initial](http://www.7kula.com/protfolio/istockmall/img/2.PNG) 
-![initial](http://www.7kula.com/protfolio/istockmall/img/3.PNG) 
-![initial](http://www.7kula.com/protfolio/istockmall/img/4.PNG) 
-![initial](http://www.7kula.com/protfolio/istockmall/img/5.PNG) 
+![initial](/istockmall/img/0.PNG) 
+![initial](/istockmall/img/1.PNG) 
+![initial](/istockmall/img/2.PNG) 
+![initial](/istockmall/img/3.PNG) 
+![initial](/istockmall/img/4.PNG) 
+![initial](/istockmall/img/5.PNG) 
 
 ##  구 플랫폼 사이트 운영 개발 관리 
 
@@ -100,8 +100,8 @@ jr.jungchul.com (주니어 E-러닝 콘텐츠 개발 )
 - url : https://ttapi.istockmall.com/
 - 서버 관리 운영(OCI)  
 
-![initial](http://www.7kula.com/protfolio/istockmall/img/m1.PNG) 
-![initial](http://www.7kula.com/protfolio/istockmall/img/m2.PNG) 
+![initial](/istockmall/img/m1.PNG) 
+![initial](/istockmall/img/m2.PNG) 
 
 
 ##  테스트 닷넷 배포 게시 테스트   
