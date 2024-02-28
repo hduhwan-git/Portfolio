@@ -90,7 +90,7 @@ jr.jungchul.com (주니어 E-러닝 콘텐츠 개발 )
 - 개발:  2022년 10월 
 - 작업 프로그램 :  php mysql 5.7.33-0ubuntu0.16.04.1, mssql 2012 사용  
 - 기능  : 자사 및 셀러 API 통계 및 로그 자료 분석에 따른 수집 개발에 필요  
-- url : https://api-scm.istockmall.com/admin/member/login
+- url : http://cyber.multinet.store/
 - 서버 관리 운영(OCI)  
 
 ##  테스트 front 구축  
