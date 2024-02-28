@@ -97,7 +97,7 @@ jr.jungchul.com (주니어 E-러닝 콘텐츠 개발 )
 - 테스트 개발:  2023년 7월 
 - 작업 프로그램 : svelte  
 - 기능  : 자사 및 셀러 테스트 API 검색 spa(Single Page Application)
-- url : https://ttapi.istockmall.com/
+- url : http://www.multinet.store/ 
 - 서버 관리 운영(OCI)  
 
 ![initial](/istockmall/img/m1.PNG) 
@@ -105,8 +105,8 @@ jr.jungchul.com (주니어 E-러닝 콘텐츠 개발 )
 
 
 ##  테스트 닷넷 배포 게시 테스트   
-- 테스트 개발:  2023년 10월 
+- 테스트 개발:  2023년 10월  
 - 작업 프로그램 : don.net core mvc .NET 6.0   
 - 기능  : 자사 쇼핑몰 테스트 사이트 
 - url : https://net-mvc.istockmall.com/
-- 서버 관리 운영(하나로호스팅)    
+- 서버 관리 운영(하나로호스팅) 2월 29일 운영 중지 볼 수 없음    
