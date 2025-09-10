@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>개발자 포트폴리오</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+            position: relative;
+        }
+
+        h1::after {
+            content: '';
+            display: block;
+            width: 100px;
+            height: 3px;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            margin: 10px auto;
+            border-radius: 2px;
+        }
+
+        .toc {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            border-left: 5px solid #667eea;
+        }
+
+        .toc h2 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+
+        .toc ul {
+            list-style: none;
+        }
+
+        .toc li {
+            margin: 10px 0;
+        }
+
+        .toc a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .toc a:hover {
+            background: #667eea;
+            color: white;
+        }
+
+        .project-section {
+            margin: 40px 0;
+            padding: 30px;
+            background: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            border: 1px solid #e9ecef;
+        }
+
+        .project-section h2 {
+            color: #2c3e50;
+            margin-bottom: 25px;
+            font-size: 2em;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 10px;
+        }
+
+        .project-subsection {
+            margin: 30px 0;
+            padding: 25px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            border-left: 4px solid #17a2b8;
+        }
+
+        .project-subsection h3 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 1.4em;
+        }
+
+        .project-info {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        .project-info strong {
+            color: #495057;
+            display: inline-block;
+            min-width: 100px;
+        }
+
+        .tech-stack {
+            background: #e3f2fd;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 0.9em;
+            color: #1976d2;
+            margin: 2px;
+            display: inline-block;
+        }
+
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 25px 0;
+        }
+
+        .image-item {
+            text-align: center;
+        }
+
+        .image-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .image-item img:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+
+        .contact-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .contact-section h2 {
+            margin-bottom: 20px;
+            font-size: 1.8em;
+        }
+
+        .contact-section a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 10px 20px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+
+        .contact-section a:hover {
+            background: rgba(255,255,255,0.3);
+            transform: translateY(-2px);
+        }
+
+        .divider {
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #667eea, transparent);
+            margin: 40px 0;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 10px;
+                padding: 15px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+            
+            .image-gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 개발자 포트폴리오</h1>
+        
+        <div class="toc">
+            <h2>📋 프로젝트 목록</h2>
+            <ul>
+                <li>🔗 <a href="#infinitum">INFINITUM</a></li>
+                <li>🔗 <a href="#jungchul">JUNGCHUL</a></li> 
+                <li>🔗 <a href="#istockmall">ISTOCKMALL</a></li>
+            </ul>
+        </div>
+
+        <div class="divider"></div>
+
+        <section id="infinitum" class="project-section">
+            <h2>INFINITUM Project</h2>
+            
+            <div class="project-info">
+                <h3><strong>CBTExamApp</strong> - 전자시험용 클라이언트 애플리케이션</h3>
+            </div>
+
+            <div class="project-subsection">
+                <h3>📋 프로젝트 정보</h3>
+                <div class="project-info">
+                    <p><strong>개발회사:</strong> 인피니텀(주)</p>
+                    <p><strong>개발자:</strong> 황두환 &lt;hduhwan@infinitum.co.kr&gt;</p>
+                    <p><strong>버전:</strong> v1.0.3</p>
+                    <p><strong>목적:</strong> CBT(Computer Based Testing) 시험 중 부정행위 방지</p>
+                </div>
+            </div>
+
+            <div class="project-subsection">
+                <h3>🛠 기술 스택</h3>
+                <div class="project-info">
+                    <p><strong>기술스택:</strong>
+                        <span class="tech-stack">Electron v37.2.3</span>
+                        <span class="tech-stack">Electron-Builder v26.0.12</span>
+                        <span class="tech-stack">JavaScript</span>
+                        <span class="tech-stack">HTML</span>
+                        <span class="tech-stack">CSS</span>
+                        <span class="tech-stack">block_keys.exe</span>
+                        <span class="tech-stack">JSON</span>
+                        <span class="tech-stack">NPM</span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="project-subsection">
+                <h3>🔧 주요 기능</h3>
+                <div class="project-info">
+                    <ul>
+                        <li>전체화면 고정 (Fullscreen / Kiosk 모드)</li>
+                        <li>시스템 키 차단 (예: Alt+Tab, Alt+F4, Ctrl+Shift+Esc, Windows 키, PrintScreen, F1~F12, ESC, INSERT 등)</li>
+                        <li>외부 프로그램 실행 방지 및 종료</li>
+                        <li>포커스 이탈 감지 및 자동 복구</li>
+                        <li>설정 파일(config.json) 기반 커스터마이징</li>
+                        <li>보안 보조 프로세스 실행 (block_keys.exe 등)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="project-subsection">
+                <h3>📝 설치 및 실행 방법</h3>
+                <div class="project-info">
+                    <ol>
+                        <li>압축을 해제하거나 <code>CBTExamApp.exe</code>를 통해 설치합니다.</li>
+                        <li>설치 후 <code>CBTExamApp.exe</code>를 실행하면 자동으로 전체화면 모드로 진입합니다.</li>
+                        <li><code>config.json</code>에 시험경로를 변경할 수 있습니다.</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="project-subsection">
+                <h3>📋 원주 보훈공단 파견 근무 수검용 프로그램 개발 (4개월)</h3>
+                <div class="project-info">
+                    <p><strong>기술스택:</strong>
+                        <span class="tech-stack">Easymaker</span>
+                        <span class="tech-stack">Java (Eclipse IDE)</span>
+                        <span class="tech-stack">전자정부프레임워크 3.8</span>
+                        <span class="tech-stack">JPA (Hibernate)</span>
+                        <span class="tech-stack">Oracle</span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="image-gallery">
+                <div class="image-item"><img src="infinitum/img/1.png" alt="Infinitum Screenshot 1"></div>
+                <div class="image-item"><img src="infinitum/img/2.png" alt="Infinitum Screenshot 2"></div>
+                <div class="image-item"><img src="infinitum/img/3.png" alt="Infinitum Screenshot 3"></div>
+                <div class="image-item"><img src="infinitum/img/4.png" alt="Infinitum Screenshot 4"></div>
+                <div class="image-item"><img src="infinitum/img/5.png" alt="Infinitum Screenshot 5"></div>
+                <div class="image-item"><img src="infinitum/img/5-1.png" alt="Infinitum Screenshot 5-1"></div>
+            </div>
+        </section>
+
+        <div class="divider"></div>
+
+        <section id="jungchul" class="project-section">
+            <h2>JUNGCHUL Portfolio</h2>
+
+            <div class="project-subsection">
+                <h3>컨테츠 / 인증 시험 개발</h3>
+                <div class="project-info">
+                    <h4><strong>jr.jungchul.com</strong> (주니어 E-러닝 콘텐츠 개발)</h4>
+                    <p><strong>개발기간:</strong> 2020년 7월 ~ 2021년 7월</p>
+                    <p><strong>기술스택:</strong> 
+                        <span class="tech-stack">JavaScript</span>
+                        <span class="tech-stack">jQuery AJAX</span>
+                        <span class="tech-stack">JSON</span>
+                        <span class="tech-stack">ASP</span>
+                        <span class="tech-stack">PHP</span>
+                        <span class="tech-stack">MSSQL 2012</span>
+                    </p>
+                    <p><strong>주요기능:</strong> 학습 콘텐츠 개발(음성인식), 영어인증시험 개발</p>
+                </div>
+                <div class="image-gallery">
+                    <div class="image-item"><img src="jungchul/img/wewiz/player.PNG" alt="WeWiz Player"></div>
+                    <div class="image-item"><img src="jungchul/img/wewiz/1.PNG" alt="WeWiz Interface 1"></div>
+                    <div class="image-item"><img src="jungchul/img/wewiz/2.PNG" alt="WeWiz Interface 2"></div>
+                    <div class="image-item"><img src="jungchul/img/wewiz/1-1.PNG" alt="WeWiz Interface 3"></div>
+                    <div class="image-item"><img src="jungchul/img/wewiz/result.PNG" alt="WeWiz Result"></div>
+                </div>
+            </div>
+
+            <div class="project-subsection">
+                <h3>jr.jungchul.com 사이트 리뉴얼</h3>
+                <div class="project-info">
+                    <p><strong>개발기간:</strong> 2019년 1월 ~ 8월</p>
+                    <p><strong>기술스택:</strong>
+                        <span class="tech-stack">JavaScript</span>
+                        <span class="tech-stack">jQuery</span>
+                        <span class="tech-stack">XML</span>
+                        <span class="tech-stack">JSON AJAX</span>
+                        <span class="tech-stack">ASP</span>
+                        <span class="tech-stack">MSSQL 2005/2012</span>
+                    </p>
+                    <p><strong>주요기능:</strong> Front, Back CRM 통계 생성 및 리뉴얼</p>
+                </div>
+                <div class="image-gallery">
+                    <div class="image-item"><img src="jungchul/img/old/1.PNG" alt="Old Site 1"></div>
+                    <div class="image-item"><img src="jungchul/img/old/2.PNG" alt="Old Site 2"></div>
+                    <div class="image-item"><img src="jungchul/img/old/3.PNG" alt="Old Site 3"></div>
+                    <div class="image-item"><img src="jungchul/img/old/s4.PNG" alt="Old Site 4"></div>
+                </div>
+            </div>
+
+            <div class="project-subsection">
+                <h3>m.jc.co.kr 주니어콘텐츠 웹앱 서비스</h3>
+                <div class="project-info">
+                    <p><strong>개발기간:</strong> 2018년</p>
+                    <p><strong>기술스택:</strong>
+                        <span class="tech-stack">JavaScript</span>
+                        <span class="tech-stack">jQuery</span>
+                        <span class="tech-stack">XML</span>
+                        <span class="tech-stack">JSON AJAX</span>
+                    </p>
+                    <p><strong>주요기능:</strong> HTML4 멀티미디어 기능 이미지, 음원 재생, 테스트</p>
+                </div>
+                <div class="image-gallery">
+                    <div class="image-item"><img src="jungchul/img/m/1.PNG" alt="Mobile 1"></div>
+                    <div class="image-item"><img src="jungchul/img/m/2.PNG" alt="Mobile 2"></div>
+                    <div class="image-item"><img src="jungchul/img/m/3.PNG" alt="Mobile 3"></div>
+                    <div class="image-item"><img src="jungchul/img/m/4.PNG" alt="Mobile 4"></div>
+                    <div class="image-item"><img src="jungchul/img/m/5.PNG" alt="Mobile 5"></div>
+                </div>
+            </div>
+
+            <div class="project-subsection">
+                <h3>아마존 서비스</h3>
+                <div class="image-gallery">
+                    <div class="image-item"><img src="jungchul/아마존서비스.PNG" alt="Amazon Service"></div>
+                </div>
+            </div>
+        </section>
+
+        <div class="divider"></div>
+
+        <section id="istockmall" class="project-section">
+            <h2>ISTOCKMALL Portfolio</h2>
+
+            <div class="project-subsection">
+                <h3>컨버스 미들웨어 운영 관리</h3>
+                <div class="project-info">
+                    <p><strong>운영기간:</strong> 2022년 10월 ~</p>
+                    <p><strong>기술스택:</strong>
+                        <span class="tech-stack">PHP 7.0</span>
+                        <span class="tech-stack">Apache</span>
+                        <span class="tech-stack">MySQL 5.7.33</span>
+                        <span class="tech-stack">MSSQL 2012~2016</span>
+                        <span class="tech-stack">Ubuntu 16.04.1</span>
+                    </p>
+                    <p><strong>주요기능:</strong> 주문, 판매, 재고, 수집 전송 API 서버</p>
+                </div>
+            </div>
+
+            <div class="project-subsection">
+                <h3>API 수정 (쿠팡, cafe24)</h3>
+                <div class="project-info">
+                    <p><strong>개발기간:</strong> 2022년 10월 ~ 2022년 12월</p>
+                    <p><strong>기술스택:</strong>
+                        <span class="tech-stack">ASP</span>
+                        <span class="tech-stack">PHP</span>
+                        <span class="tech-stack">MSSQL</span>
+                        <span class="tech-stack">Windows 2012 R2</span>
+                    </p>
+                    <p><strong>주요기능:</strong> 주문, 판매, 재고, 수집 전송 API 서버</p>
+                    <p><strong>인프라:</strong> 서버 관리 운영(서초동 하나로호스트, AWS)</p>
+                </div>
+            </div>
+
+            <div class="project-subsection">
+                <h3>미들웨어 개발 (신 스탁몰 API)</h3>
+                <div class="project-info">
+                    <p><strong>개발기간:</strong> 2023년 6월 ~ 2023년 7월</p>
+                    <p><strong>기술스택:</strong>
+                        <span class="tech-stack">PHP</span>
+                        <span class="tech-stack">MySQL 5.7.33</span>
+                        <span class="tech-stack">MSSQL 2012</span>
+                    </p>
+                    <p><strong>주요기능:</strong> 자사 및 셀러 API 통계 및 로그 자료 분석에 따른 수집</p>
+                    <p><strong>API 문서:</strong> <a href="https://dev-scm.istockmall.co.kr/docs#goods" target="_blank">https://dev-scm.istockmall.co.kr/docs#goods</a></p>
+                </div>
+                <div class="image-gallery">
+                    <div class="image-item"><img src="istockmall/img/0.PNG" alt="IStockMall API 1"></div>
+                    <div class="image-item"><img src="istockmall/img/1.PNG" alt="IStockMall API 2"></div>
+                    <div class="image-item"><img src="istockmall/img/2.PNG" alt="IStockMall API 3"></div>
+                    <div class="image-item"><img src="istockmall/img/3.PNG" alt="IStockMall API 4"></div>
+                    <div class="image-item"><img src="istockmall/img/4.PNG" alt="IStockMall API 5"></div>
+                    <div class="image-item"><img src="istockmall/img/5.PNG" alt="IStockMall API 6"></div>
+                </div>
+            </div>
+
+            <div class="project-subsection">
+                <h3>구 플랫폼 사이트 운영 개발 관리</h3>
+                <div class="project-info">
+                    <p><strong>개발/운영기간:</strong> 2022년 10월 ~ 2023년 5월</p>
+                    <p><strong>기술스택:</strong>
+                        <span class="tech-stack">ASP</span>
+                        <span class="tech-stack">MSSQL</span>
+                        <span class="tech-stack">PHP</span>
+                        <span class="tech-stack">MySQL</span>
+                        <span class="tech-stack">jQuery</span>
+                        <span class="tech-stack">JSON</span>
+                        <span class="tech-stack">XML</span>
+                        <span class="tech-stack">JavaScript</span>
+                    </p>
+                    <p><strong>주요기능:</strong> 자사 및 셀러 플랫폼 판매 및 쿠팡, 11ST API 연동 운영 관리</p>
+                    <p><strong>사이트:</strong> https://devmain.istockmall.com (현재 개발사이트만 존재)</p>
+                    <p><strong>인프라:</strong> 서버 관리 운영(하나로호스팅)</p>
+                    <p><strong>참고:</strong> www.istockmall.co.kr (Laravel, Vue) 아웃소싱 업체에서 관리중</p>
+                </div>
+            </div>
+
+            <div class="project-subsection">
+                <h3>테스트 미들웨어 구축</h3>
+                <div class="project-info">
+                    <p><strong>개발기간:</strong> 2022년 10월</p>
+                    <p><strong>기술스택:</strong>
+                        <span class="tech-stack">PHP</span>
+                        <span class="tech-stack">MySQL 5.7.33</span>
+                        <span class="tech-stack">MSSQL 2012</span>
+                    </p>
+                    <p><strong>주요기능:</strong> 자사 및 셀러 API 통계 및 로그 자료 분석에 따른 수집 개발에 필요</p>
+                    <p><strong>사이트:</strong> http://cyber.multinet.store/</p>
+                    <p><strong>인프라:</strong> 서버 관리 운영(OCI)</p>
+                </div>
+            </div>
+
+            <div class="project-subsection">
+                <h3>테스트 Front 구축</h3>
+                <div class="project-info">
+                    <p><strong>개발기간:</strong> 2023년 7월</p>
+                    <p><strong>기술스택:</strong>
+                        <span class="tech-stack">Svelte</span>
+                    </p>
+                    <p><strong>주요기능:</strong> 자사 및 셀러 테스트 API 검색 SPA(Single Page Application)</p>
+                    <p><strong>사이트:</strong> http://www.multinet.store/</p>
+                    <p><strong>인프라:</strong> 서버 관리 운영(OCI)</p>
+                </div>
+                <div class="image-gallery">
+                    <div class="image-item"><img src="istockmall/img/m1.PNG" alt="Test Frontend 1"></div>
+                    <div class="image-item"><img src="istockmall/img/m2.PNG" alt="Test Frontend 2"></div>
+                </div>
+            </div>
+
+            <div class="project-subsection">
+                <h3>테스트 닷넷 배포 게시 테스트</h3>
+                <div class="project-info">
+                    <p><strong>개발기간:</strong> 2023년 10월</p>
+                    <p><strong>기술스택:</strong>
+                        <span class="tech-stack">ASP.NET Core MVC</span>
+                        <span class="tech-stack">.NET 6.0</span>
+                    </p>
+                    <p><strong>주요기능:</strong> 자사 쇼핑몰 테스트 사이트</p>
+                    <p><strong>사이트:</strong> https://net-mvc.istockmall.com/ (2024년 2월 29일 운영 중지)</p>
+                    <p><strong>인프라:</strong> 서버 관리 운영(하나로호스팅)</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="contact-section">
+            <h2>📞 연락처 및 링크</h2>
+            <p><a href="https://github.com/hduhwan-git/Portfolio" target="_blank">🔗 GitHub Repository</a></p>
+        </div>
+    </div>
+</body>
+</html>

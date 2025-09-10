@@ -1,0 +1,82 @@
+{
+  "name": "cbtexamapp",
+  "version": "1.0.3",
+  "description": "**CBTExamApp**은 인피니텀(주)에서 개발한 전자시험용 클라이언트 설치 프로그램으로, 시험 중 부정행위를 방지하기 위한 기능을 제공합니다.  \r 해당 애플리케이션은 특정 기관 또는 기업의 내부 CBT 시험 환경에 맞춰 맞춤 제작되었으며, 일반적인 배포용이 아닙니다.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "build": {
+    "appId": "com.cbt.examapp",
+    "productName": "CBTExamApp",
+    "asar": true,
+    "files": [
+      "main.js",
+      "config.json",
+      "index.html",
+      "block_keys.exe",
+      "LICENSE-GPL.txt",
+      "LICENSE.electron.txt",
+      "LICENSES.chromium.html",
+      "!**/test/**",
+      "!**/*.md",
+      "!**/docs/**",
+      "!**/*.map",
+      "!**/*.ts",
+      "!**/node_modules/**/test/**"
+    ],
+    "extraResources": [
+      {
+        "from": "config.json",
+        "to": "config.json"
+      },
+      {
+        "from": "block_keys.exe",
+        "to": "block_keys.exe"
+      },
+      {
+        "from": "LICENSE-GPL.txt",
+        "to": "LICENSE-GPL.txt"
+      },
+      {
+        "from": "LICENSE.electron.txt",
+        "to": "LICENSE.electron.txt"
+      },
+      {
+        "from": "LICENSES.chromium.html",
+        "to": "LICENSES.chromium.html"
+      }
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "favicon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "runAfterFinish": false,
+      "allowToChangeInstallationDirectory": true,
+      "allowElevation": true,
+      "createDesktopShortcut": true,
+      "deleteAppDataOnUninstall": true
+    }
+  },
+  "keywords": [
+    "electron",
+    "cbt",
+    "exam",
+    "anti-cheat",
+    "fullscreen",
+    "keyboard-lock",
+    "focus-lock",
+    "부정행위방지"
+  ],
+  "author": "황두환 <hduhwan@infinitum.co.kr>",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "electron": "^37.2.3",
+    "electron-builder": "^26.0.12"
+  }
+}
